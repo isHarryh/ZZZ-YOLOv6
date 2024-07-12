@@ -9,8 +9,8 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "~3.8"
-torch = "~1.8"
-torchvision = "~0.9"
+torch = { version = "~1.13", source = "PyTorch-Cuda116" }
+torchvision = { version = "~0.14", source = "PyTorch-Cuda116" }
 numpy = "~1.24"
 opencv-python = "~4.10"
 pyyaml = "~5.4"
@@ -28,6 +28,11 @@ thop = "~0.1"
 name = "PyPI-Tsinghua"
 url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 priority = "primary"
+
+[[tool.poetry.source]]
+name = "PyTorch-Cuda116"
+url = "https://download.pytorch.org/whl/cu116"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]
