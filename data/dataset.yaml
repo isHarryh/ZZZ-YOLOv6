@@ -6,6 +6,38 @@ test: ../custom_dataset/images/test # test images (optional)
 # whether it is coco dataset, only coco dataset should be set to True.
 is_coco: False
 # Classes
-nc: 20  # number of classes
-names: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog',
-        'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']  # class names
+nc: 33  # number of classes
+names: ['THeader',
+        'THpBar',
+        'TNavDot',
+        'TSpAtk',
+        'TExSpAtk',
+        'TChainAtk',
+        'TUltimate',
+        'TQuickAssist',
+        'TGoldenPrompt',
+        'TRedPrompt',
+        'TWipeout',
+        'UBangboo',
+        'UDevice',
+        'ECommonEther',
+        'EEliteEther',
+        'EMachine',
+        'EOrganic',
+        'CEllen',
+        'CGrace',
+        'CKoleda',
+        'CLycaon',
+        'CNekomata',
+        'CRina',
+        'CSoldier11',
+        'CAnby',
+        'CAnton',
+        'CBen',
+        'CBilly',
+        'CCorin',
+        'CLucy',
+        'CNicole',
+        'CPiper',
+        'CSoukaku'
+        ]  # class names
