@@ -91,17 +91,10 @@ def run(weights=osp.join(ROOT, 'yolov6s.pt'),
     # create save dir
     if save_dir is None:
         save_dir = osp.join(project, name)
-        save_txt_path = osp.join(save_dir, 'labels')
-    else:
-        save_txt_path = save_dir
     if (not not_save_img or save_txt) and not osp.exists(save_dir):
         os.makedirs(save_dir)
     else:
         LOGGER.warning('Save directory already existed')
-    if save_txt:
-        save_txt_path = osp.join(save_dir, 'labels')
-        if not osp.exists(save_txt_path):
-            os.makedirs(save_txt_path)
 
     # Inference
     inferer = Inferer(source, webcam, webcam_addr, weights, device, yaml, img_size, half)
