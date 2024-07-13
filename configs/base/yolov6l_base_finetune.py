@@ -1,4 +1,4 @@
-# YOLOv6 large base model
+# YOLOv6l large base model
 model = dict(
     type='YOLOv6l_base',
     depth_multiple=1.0,

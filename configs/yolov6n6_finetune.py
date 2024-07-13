@@ -1,4 +1,4 @@
-# YOLOv6n model
+# YOLOv6n6 model
 model = dict(
     type='YOLOv6n6',
     pretrained='weights/yolov6n6.pt',

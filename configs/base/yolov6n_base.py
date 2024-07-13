@@ -1,4 +1,4 @@
-# YOLOv6s nano base model
+# YOLOv6n nano base model
 model = dict(
     type='YOLOv6n_base',
     pretrained=None,

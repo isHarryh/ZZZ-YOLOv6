@@ -1,4 +1,4 @@
-# YOLOv6n model with eval param(when traing)
+# YOLOv6n model with eval param (when traing)
 model = dict(
     type='YOLOv6n',
     pretrained=None,
